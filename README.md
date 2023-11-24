@@ -1,9 +1,10 @@
-# xDashboard User CRUD Service
+# User Management CRUD Service
 
-This service is a simple CRUD (Create, Read, Update, Delete) for managing user data. It is built using Node.Js, TypeScript, Fastify, and MongoDB. The primary purpose is to demonstrate a basic user management system with RESTful API endpoints.
+This service is a simple CRUD (Create, Read, Update, Delete) for managing user data. It is built using Node.js, TypeScript, Fastify, and MongoDB. The primary purpose is to demonstrate a basic user management system with RESTful API endpoints.
 
 ## Technologies Used
 
+- Node.js
 - TypeScript
 - Fastify
 - MongoDB
