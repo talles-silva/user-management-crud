@@ -9,7 +9,7 @@ const connectDB = async () => {
 
     return mongoose.connection;
   } catch (error) {
-    console.error('Erro ao conectar ao MongoDB:', error);
+    console.error('Erro ao conectar ao MongoDB, VERIFICAR .env:', error);
     process.exit(1);
   }
 };

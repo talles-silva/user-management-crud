@@ -11,6 +11,7 @@ const start = async () => {
     await app.listen({
       port: 3200
     });
+
     console.log('Servidor rodando em http://localhost:3200/');
   } catch (error) {
     console.error('Erro ao iniciar o servidor:', error);

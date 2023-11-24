@@ -6,7 +6,8 @@ const AddressSchema = new Schema({
   city: { type: String, required: true },
   state: { type: String, required: true },
   zip: { type: Number, required: true },
-  number: { type: Number, required: true }
+  number: { type: Number, required: true },
+  complement: { type: String }
 });
 
 // Definindo um schema para o usuário
@@ -15,7 +16,7 @@ const UserSchema = new Schema({
   cpf: { type: String, unique: true },
   email: { type: String, required: true, unique: true },
   address: { type: AddressSchema },
-  role: { type: String, enum: ['admin', 'cliente'], required: true }
+  role: { type: String, enum: ['admin', 'client'], required: true }
 });
 
 // Modelo para o usuário
@@ -27,6 +28,7 @@ interface Address {
   state: string;
   zip: number;
   number: number;
+  complement?: string;
 }
 
 interface User extends Document {
